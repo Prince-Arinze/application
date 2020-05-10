@@ -1,48 +1,24 @@
 {
-  "name": "military-archiving",
-  "version": "0.1.0",
-  "private": true,
-  "engines": {
-    "node": "10.16.3",
-    "npm": "6.9.0"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "apollo-boost": "^0.4.7",
-    "bcrypt": "^4.0.1",
-    "bootstrap": "^4.4.1",
-    "react": "^16.13.1",
-    "react-apollo": "^3.1.5",
-    "react-dom": "^16.13.1",
-    "react-hook-form": "^5.6.3",
-    "react-icons": "^3.10.0",
-    "react-map-gl": "^5.2.5",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "reactstrap": "^8.4.1",
-    "styled-components": "^5.1.0"
-  },
+  "name": "application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "heroku-postbuild": "cd ./client && npm install && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prince-Arinze/application.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prince-Arinze/application/issues"
+  },
+  "homepage": "https://github.com/Prince-Arinze/application#readme",
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
